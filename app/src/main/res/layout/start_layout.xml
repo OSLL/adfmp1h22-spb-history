@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="420dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="10dp" />
+
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="214dp"
+        android:layout_height="66dp"
+        android:text="Старт"
+        app:layout_constraintBottom_toTopOf="@+id/settings_button"
+        app:layout_constraintEnd_toStartOf="@+id/right_guideLine"
+        app:layout_constraintLeft_toRightOf="@+id/left_guideLine"
+        app:layout_constraintRight_toRightOf="@+id/right_guideLine"
+        app:layout_constraintStart_toStartOf="@+id/left_guideLine"
+        app:layout_constraintTop_toTopOf="@+id/top_guideLine"
+        app:layout_constraintVertical_bias="20.913" />
+
+    <!--        app:layout_constraintTop_toBottomOf="@+id/start_button"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/help_button"-->
+
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="214dp"
+        android:layout_height="66dp"
+        android:text="Настройки"
+        app:layout_constraintEnd_toStartOf="@+id/right_guideLine"
+        app:layout_constraintLeft_toRightOf="@+id/left_guideLine"
+        app:layout_constraintRight_toRightOf="@+id/right_guideLine"
+        app:layout_constraintStart_toStartOf="@+id/left_guideLine"
+        app:layout_constraintTop_toBottomOf="@+id/start_button"
+        app:layout_constraintBottom_toTopOf="@id/help_button"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="214dp"
+        android:layout_height="66dp"
+        android:text="Помощь"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_guideLine"
+        app:layout_constraintEnd_toStartOf="@+id/right_guideLine"
+        app:layout_constraintLeft_toRightOf="@+id/left_guideLine"
+        app:layout_constraintRight_toRightOf="@+id/right_guideLine"
+        app:layout_constraintStart_toStartOf="@+id/left_guideLine"
+        app:layout_constraintTop_toBottomOf="@+id/settings_button"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="420dp"
+        android:layout_height="725dp"
+        app:srcCompat="@drawable/wp4811663"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
