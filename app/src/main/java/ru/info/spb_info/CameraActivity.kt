@@ -11,10 +11,12 @@ import android.widget.FrameLayout
 import androidx.core.content.ContextCompat
 import java.util.concurrent.CopyOnWriteArrayList
 import android.Manifest
+import android.content.Intent
 import android.hardware.*
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
+import kotlinx.android.synthetic.main.activity_main.*
 
 class CameraActivity : Activity() {
 
@@ -56,6 +58,10 @@ class CameraActivity : Activity() {
                 arrayOf(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE),
                 REQ_CODE
             )
+        }
+        button2.setOnClickListener {
+            val intent = Intent(this, DescriptionActivity::class.java)
+            startActivity(intent)
         }
 
 //        val locationPermissionRequest = registerForActivityResult(
