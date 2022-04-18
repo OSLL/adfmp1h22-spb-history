@@ -59,7 +59,7 @@ class CameraActivity : Activity() {
                 REQ_CODE
             )
         }
-        button2.setOnClickListener {
+        description_button.setOnClickListener {
             val intent = Intent(this, DescriptionActivity::class.java)
             startActivity(intent)
         }
